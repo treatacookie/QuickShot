@@ -1,0 +1,82 @@
+========================================================================
+END-USER LICENSE AGREEMENT (EULA) FOR QUICKSHOT
+Version 0.8.7 | Effective Date: November 2026
+========================================================================
+
+IMPORTANT - READ CAREFULLY:
+This End-User License Agreement ("EULA") is a legal agreement between you
+(either an individual or a single entity) and the QuickShot Authors
+("Licensor") for the QuickShot software product, including computer
+software, binaries, source code, and associated documentation ("Software").
+
+By installing, copying, or otherwise using the Software, you agree to be
+bound by the terms of this EULA and the accompanying MIT License. If you
+do not agree to the terms of this EULA, do not install or use the Software.
+
+------------------------------------------------------------------------
+1. GRANT OF LICENSE (MIT OPEN SOURCE LICENSE)
+------------------------------------------------------------------------
+The Software is licensed under the permissive MIT License:
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this Software and associated documentation files, to deal in the
+Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, subject to the condition that the copyright notice
+and permission notice be included in all copies or substantial portions
+of the Software.
+
+------------------------------------------------------------------------
+2. PRIVACY & LOCAL DATA PROCESSING GUARANTEE
+------------------------------------------------------------------------
+QuickShot is designed with a strict local-first architecture:
+  (a) No Telemetry or Analytics: The Software does not collect, transmit,
+      or store any personal data, usage telemetry, or crash reports on
+      external servers.
+  (b) Local Screen Capture: All screen captures, pixel buffers, and
+      annotations are processed 100% locally in your device's memory,
+      system clipboard, or local filesystem (e.g. Pictures/Screenshots).
+  (c) Optional External Connections: The Software makes external network
+      connections ONLY in two limited circumstances:
+      1. Optional SHA-512 verified update checks against GitHub Releases
+         (https://github.com/treatacookie/QuickShot/releases/latest/download/latest.yml),
+         which may be disabled anytime in Options -> Software Updates.
+      2. When you explicitly click "Search similar images on Google" (Ctrl+G),
+         which encodes that single selected region in RAM and submits it
+         directly over HTTPS to Google Lens (https://lens.google.com/v3/upload)
+         to open live visual search results in your browser (with automatic
+         clipboard copy + https://www.google.com/?olud fallback if unreachable).
+
+------------------------------------------------------------------------
+3. INTELLECTUAL PROPERTY
+------------------------------------------------------------------------
+QuickShot is an original software project written from scratch in Rust.
+All source code, rendering pipelines, and architectural components are
+original works of TreatACookie and the QuickShot Contributors.
+
+------------------------------------------------------------------------
+4. THIRD-PARTY OPEN SOURCE COMPONENTS
+------------------------------------------------------------------------
+This Software incorporates open-source libraries from the Rust ecosystem
+(including winit, softbuffer, arboard, rfd, global-hotkey, tray-icon,
+image, and windows-sys), each distributed under permissive open-source
+licenses (MIT and/or Apache License 2.0). Full attribution and license
+notices are provided in THIRD_PARTY_NOTICES.md in the installation folder.
+
+------------------------------------------------------------------------
+5. DISCLAIMER OF WARRANTIES
+------------------------------------------------------------------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. THE ENTIRE RISK AS
+TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH YOU.
+
+------------------------------------------------------------------------
+6. LIMITATION OF LIABILITY
+------------------------------------------------------------------------
+IN NO EVENT SHALL THE AUTHORS, COPYRIGHT HOLDERS, OR CONTRIBUTORS BE
+LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+========================================================================
